@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.WinnerView">
+   <children>
+      <ImageView fitHeight="299.0" fitWidth="693.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/winner.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="winnerLabel" alignment="CENTER" layoutX="33.0" layoutY="14.0" prefHeight="65.0" prefWidth="627.0" text="The winner is Valera" textFill="RED">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="267.0" layoutY="224.0" onAction="#openMenuView" prefHeight="35.0" prefWidth="159.0" ripplerFill="#6a1bae" style="-fx-background-color: #393c42;" text="Return to Menu" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="267.0" layoutY="178.0" onAction="#playAgain" prefHeight="35.0" prefWidth="159.0" ripplerFill="#6a1bae" style="-fx-background-color: #393c42;" text="Play Again" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="afterGameStatistics" layoutX="222.0" layoutY="79.0" prefHeight="80.0" prefWidth="249.0">
+        <columns>
+          <TableColumn fx:id="bulletsFiredColumn" prefWidth="126.0" text="Bullets Fired" />
+          <TableColumn fx:id="distanceColumn" prefWidth="122.0" text="Distance Covered" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.StatisticsViews.StatisticsPanelView">
+   <tabs>
+      <Tab closable="false" text="Overall Statistics">
+         <content>
+            <fx:include fx:id="overallStatistics" source="OverallStatistics.fxml" />
+         </content>
+      </Tab>
+      <Tab closable="false" text="Personal Statistics">
+        <content>
+           <fx:include fx:id="personalStatistics" source="PersonalStatistics.fxml" />
+        </content>
+      </Tab>
+      <Tab text="Game Statistics">
+        <content>
+           <fx:include fx:id="gameStatistics" source="GameStatistics.fxml" />
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

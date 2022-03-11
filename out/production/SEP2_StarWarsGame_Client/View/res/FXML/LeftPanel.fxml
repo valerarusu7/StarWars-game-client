@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fillWidth="false" maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="250.0" prefHeight="600.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LeftPanelView">
+   <children>
+      <Pane prefHeight="392.0" prefWidth="350.0" style="-fx-background-color: #51555e;">
+         <children>
+            <ImageView fitHeight="139.0" fitWidth="240.0" layoutX="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="avatarImage" fitHeight="115.0" fitWidth="115.0" layoutX="5.0" layoutY="155.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../avatars/stormtrooper.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="148.0" prefHeight="27.0" prefWidth="115.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ProgressBar layoutX="129.0" layoutY="213.0" prefHeight="18.0" prefWidth="100.0" progress="0.0" />
+            <Label layoutX="152.0" layoutY="175.0" text="Level 1" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="129.0" layoutY="239.0" onAction="#editProfileButtonPressed" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #393c42; -fx-background-radius: 0;" text="Edit Profile" textFill="WHITE" />
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#playGameButtonPressed" prefHeight="0.0" prefWidth="250.0" style="-fx-background-color: #393c42; -fx-border-radius: 0; -fx-background-radius: 0;" text="Play Game" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#charactersButtonPressed" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #393c42; -fx-border-radius: 0; -fx-background-radius: 0;" text="Characters" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#statisticsButtonPressed" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #393c42; -fx-border-radius: 0; -fx-background-radius: 0;" text="Statistics" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#rulesButtonPressed" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #393c42; -fx-border-radius: 0; -fx-background-radius: 0;" text="Rules" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </JFXButton>
+      <Pane prefHeight="194.0" prefWidth="250.0" style="-fx-background-color: #51555e;" />
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#logOutButtonPressed" prefHeight="50.0" prefWidth="250.0" ripplerFill="#f50000" style="-fx-background-color: #393c42; -fx-border-radius: 0; -fx-background-radius: 0;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

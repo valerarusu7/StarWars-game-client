@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.StatisticsViews.GameStatisticsView">
+   <children>
+      <Pane fx:id="statisticsPane" prefHeight="611.0" prefWidth="766.0">
+         <children>
+            <JFXTabPane layoutX="255.0" layoutY="32.0" prefHeight="74.0" prefWidth="105.0" />
+            <ImageView fitHeight="629.0" fitWidth="766.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../images/statistics.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="statisticsTable" layoutX="46.0" layoutY="71.0" prefHeight="488.0" prefWidth="675.0" style="-fx-background-color: rgba(0,0,0,0.3);">
+               <columns>
+                  <TableColumn fx:id="gameId" editable="false" prefWidth="74.0" sortable="false" style="-fx-background-color: rgba(0,0,0,0.3);" text="Game ID" />
+                  <TableColumn fx:id="winner" editable="false" prefWidth="107.0" sortable="false" style="-fx-background-color: rgba(0,0,0,0.3);" text="Winner" />
+                  <TableColumn fx:id="totalBulletsFired" editable="false" prefWidth="159.0" sortable="false" style="-fx-background-color: rgba(0,0,0,0.3);" text="Total Bullets Fired" />
+                  <TableColumn fx:id="totalGivenDamage" editable="false" prefWidth="159.0" sortable="false" style="-fx-background-color: rgba(0,0,0,0.3);" text="Total Given Damage" />
+                  <TableColumn fx:id="totalDistance" editable="false" prefWidth="175.0" sortable="false" style="-fx-background-color: rgba(0,0,0,0.3);" text="Game Length" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
